@@ -14,10 +14,11 @@
 #endif
 
 #import <React/RCTEventEmitter.h>
+#import <React/RCTBridgeModule.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RNSSSiriShortcuts : RCTEventEmitter
+@interface RNSSSiriShortcuts : RCTEventEmitter <RCTBridgeModule>
 
 + (BOOL)application:(nonnull UIApplication *)application
     continueUserActivity:(nonnull NSUserActivity *)userActivity
